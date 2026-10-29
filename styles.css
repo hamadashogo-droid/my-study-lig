@@ -512,16 +512,60 @@ textarea:focus {
 }
 
 @media (max-width: 560px) {
+  .app-shell {
+    gap: 10px;
+    width: calc(100% - 16px);
+    padding: 8px 0 16px;
+  }
+
   .editor-panel,
   .history-panel {
-    padding: 18px;
+    padding: 12px;
   }
 
   .brand-row,
-  .history-header,
-  .list-tools {
-    align-items: stretch;
-    flex-direction: column;
+  .history-header {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .diary-form {
+    gap: 7px;
+  }
+
+  input[type="date"] {
+    min-height: 38px;
+  }
+
+  textarea {
+    height: 68px;
+    min-height: 60px;
+    padding: 8px;
+    resize: vertical;
+  }
+
+  .note-meta {
+    font-size: 0.72rem;
+  }
+
+  .action-row {
+    gap: 6px;
+    margin-top: 2px;
+  }
+
+  .primary-button,
+  .ghost-button {
+    min-height: 40px;
+    padding: 0 10px;
+    font-size: 0.86rem;
   }
 
   .save-state,
@@ -530,20 +574,90 @@ textarea:focus {
   }
 
   .mood-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 4px;
+    margin-top: 6px;
   }
 
   .mood-option {
-    min-height: 76px;
+    min-height: 58px;
+    gap: 3px;
+    padding: 3px 1px;
+    font-size: 0.62rem;
+    overflow-wrap: anywhere;
+  }
+
+  .mood-face {
+    font-size: 1.25rem;
+  }
+
+  .biorhythm,
+  .summary-row {
+    display: none;
+  }
+
+  .list-tools {
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .search-box input,
+  .list-tools select {
+    min-height: 38px;
+    padding: 0 8px;
+    font-size: 0.8rem;
   }
 
   .list-tools select {
-    flex-basis: auto;
+    flex: 0 1 145px;
   }
 
-  .primary-button,
-  .ghost-button {
-    flex: 1 1 150px;
+  .entry-list {
+    max-height: 132px;
+    overflow-y: auto;
+  }
+
+  .entry-card {
+    gap: 6px;
+    padding: 9px;
+  }
+
+  .entry-date {
+    font-size: 0.88rem;
+  }
+
+  .mood-badge {
+    min-height: 28px;
+    font-size: 0.72rem;
+  }
+
+  .entry-note {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+
+  .entry-actions button {
+    min-height: 32px;
+  }
+
+  .empty-state {
+    gap: 4px;
+    padding: 10px;
+    font-size: 0.82rem;
+  }
+
+  .empty-state strong {
+    font-size: 0.9rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 3px;
+    font-size: 0.62rem;
   }
 }
     
